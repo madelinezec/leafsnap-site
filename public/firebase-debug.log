@@ -1,0 +1,35 @@
+[debug] [2018-06-01T16:46:24.297Z] ----------------------------------------------------------------------
+[debug] [2018-06-01T16:46:24.299Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy
+[debug] [2018-06-01T16:46:24.299Z] CLI Version:   3.17.4
+[debug] [2018-06-01T16:46:24.299Z] Platform:      darwin
+[debug] [2018-06-01T16:46:24.299Z] Node Version:  v8.9.4
+[debug] [2018-06-01T16:46:24.300Z] Time:          Fri Jun 01 2018 12:46:24 GMT-0400 (EDT)
+[debug] [2018-06-01T16:46:24.300Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-06-01T16:46:24.315Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-06-01T16:46:24.316Z] > authorizing via signed-in user
+[debug] [2018-06-01T16:46:24.317Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-06-01T16:46:24.318Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ { refresh_token: '1/FPuLjwpjp5Qr9nPZsc9H9CLYW-pAioWrPQEwjmJ7avI',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Fri Jun 01 2018 12:46:24 GMT-0400 (EDT)
+[debug] [2018-06-01T16:46:24.450Z] <<< HTTP RESPONSE 200
+[debug] [2018-06-01T16:46:24.471Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/leaf-9f1ee  
+  
+ Fri Jun 01 2018 12:46:24 GMT-0400 (EDT)
+[debug] [2018-06-01T16:46:24.853Z] <<< HTTP RESPONSE 200
+[debug] [2018-06-01T16:46:24.854Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/leaf-9f1ee/tokens  
+  
+ Fri Jun 01 2018 12:46:24 GMT-0400 (EDT)
+[debug] [2018-06-01T16:46:25.343Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'leaf-9f1ee'...
+[info] 
+[info] i  deploying hosting
+[info] i  hosting: preparing public directory for upload...
+[debug] [2018-06-01T16:46:31.275Z] >>> HTTP REQUEST PUT https://deploy.firebase.com/v1/hosting/leaf-9f1ee/uploads/-LDwEYoET3zDX0NgSW50?fileCount=8357&message=  
+  
+ Fri Jun 01 2018 12:46:31 GMT-0400 (EDT)

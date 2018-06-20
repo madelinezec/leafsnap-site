@@ -1,0 +1,108 @@
+div#content {
+    margin-bottom: 50px;
+    padding-top: 50px;
+    position: relative;
+    -moz-border-radius-bottomleft: 16px;
+    -moz-border-radius-bottomright: 16px;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+}
+
+#home{
+   margin:auto;
+   width:85%;
+   text-indent:50px;
+   column-count:2; 
+   column-gap:30px;
+}
+
+div#content .links {
+    position: relative;
+    top: 35px;
+    display: inline-block;
+    width: 100%;
+}
+
+div#content .links img {
+    max-height: 56px;
+}
+
+div#content td.randomimg h3 {
+    font-size: 18px;
+    font-weight: normal;
+    margin-bottom: 1.5em;
+    position: relative;
+}
+
+
+h1.title {
+    font-size: 1.5em;
+}
+
+h2.labname {
+    font-size: 1.2em;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.peoplecard {
+    width: 33%;
+    height: auto;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.peoplecard img {
+    height: 240px;
+    margin: auto;
+    display: block;
+}
+
+.peoplecard p {
+    width: 320px;
+    margin: 10px auto;
+    text-align: justify;
+    font-size: 15px;
+}
+
+.peoplecard p span.peoplename {
+    font-size: 18px;
+}
+
+.text {
+    height: 100px;
+    overflow: hidden;
+}
+.container {
+    position: relative;
+}
+
+.About{
+   margin:auto;
+   width: 80%;
+}
+
+label {
+    font-weight:550;
+}
+
+input {
+    display: none;
+}
+
+label:after {
+    content: "Show More";
+}
+
+.text{
+   margin-top: 10px;
+   text-indent:40px;
+}
+
+input:checked + label:after {
+    content: "Show Less";
+}
+
+input:checked ~ div {
+    height: 100%;
+}

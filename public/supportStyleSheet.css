@@ -1,0 +1,86 @@
+@import url(main.css);
+
+body{
+    background:#F1F1F1;
+    text-align:left;
+    color:#4A4A4A;
+}
+
+.toggle{
+   margin-bottom:2%;
+}
+
+.toggle-button{
+    content:url("bulletPlus.png");
+    width:20px;
+    height:20px;
+    float:left;  
+    padding-right:7px;
+    margin-top:0.25em;
+}
+
+.toggle-button.active{
+    content:url("bulletMinus.png");
+}
+
+.toggle-title h3{
+    font-size:23px;
+    font-weight: 450;
+    width:65%;
+}
+
+.container{
+    margin:auto;
+    margin-left:5%;
+    padding-top:30px;
+}
+
+.toggle-inner{
+    display:none;
+    padding-left:30px;
+}
+
+.subject.header{
+    color:#89BE21;
+    font-size:24px;
+    font-weight:550;
+}
+
+
+.text {
+    height: 100px;
+    overflow: hidden;
+}
+.container {
+    position: relative;
+}
+
+.About{
+   margin:auto;
+   width: 80%;
+   text-align:center;
+}
+
+label {
+    font-weight:550;
+}
+
+input {
+    display: none;
+}
+
+label:after {
+    content: "Show More";
+}
+
+#text{
+   margin-top: 20px;
+}
+
+input:checked + label:after {
+    content: "Show Less";
+}
+
+input:checked ~ div {
+    height: 100%;
+}
