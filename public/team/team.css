@@ -127,6 +127,10 @@ input:checked ~ div {
   background-color: #fff;
 }
 
+a {
+  display: inline-block;
+}
+
 article {
   position: relative;
   width: 300px;
@@ -190,8 +194,7 @@ a:hover .ring {
 
 a:hover .bio {
   color: #FFF;
-  background-color: rgb(0,0,0);
-  opacity:0.93;
+  background-color: #000000;
   width: 100%;
   padding-top: 0;
 }
