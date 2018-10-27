@@ -1,0 +1,130 @@
+* { margin: 0; padding: 0; }
+
+div.datacode {
+    text-align: left;
+    padding-left: 30px;
+    padding-right: 20px;
+    background-color: #F0F0F0;
+}
+div{
+    display:block;
+}
+div.datacode p {
+    font-size: 1em;
+}
+
+div.datacode p.introParagraph{
+    margin:25px 0px 25px;
+}
+
+
+div.datacode p.downloadParagraph{
+    margin:40px 0px 10px;
+}
+
+div.datacode ul, div.datacode ol {
+    list-style-position: outside;
+    padding-left: 25px;
+}
+
+div.datacode li {
+    margin-bottom: 0.2em;
+}
+
+h1 {
+    font-size: 1.3em;
+    font-weight: normal;
+    margin-bottom: 1em;
+    margin-top:25px;
+}
+
+h2 {
+    font-size: 1.2em;
+    font-weight: normal;
+    margin-bottom: 0em;
+    margin-top: 3em;
+}
+
+hr {
+    margin-bottom: 0.5em;
+}
+
+.publication {
+    margin-left: 2em;
+    margin-bottom: 1em;
+}
+
+.publication .bibref {
+    display: none;
+    font-family: monospace;
+}
+
+.fakelink {
+    cursor: pointer;
+    color: #9AD420;
+}
+
+.publicationLinks{
+    color: #9AD420;
+    cursor: pointer;
+}
+
+.publicationLinks a{
+    color: #9AD420;
+    cursor: pointer;
+}
+#dataset table {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#dataset th {
+    font-weight: normal;
+    text-decoration: underline;
+}
+
+#specieslist th {
+    background: #BBDDFF;
+    padding: 5px;
+    font-weight: bold;
+}
+
+col.count {
+    text-align: right;
+}
+
+#dataset .speciesname {
+    text-align: left;
+    padding-left: 5px;
+}
+
+tr.even {
+    background: #FFF;
+}
+
+tr.odd {
+    background: #FFF;
+}
+
+#dataset td {
+    vertical-align: middle;
+    padding: 0.5em 0;
+}
+
+.description {
+    text-align: justify;
+    padding: 0.5em;
+    white-space: nowrap;
+}
+
+pre, code {
+    font-family: monospace;
+    font-size: 1.2em;
+}
+
+pre {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+

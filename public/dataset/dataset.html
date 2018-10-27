@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html>
    <head>
-      <title>Leafsnap</title>
+      <title>Leafsnap Dataset | Leafsnap: An Electronic Field Guide</title>
       <meta charset="utf-8" />
-   <link rel="stylesheet" type="text/css" href="../main.css">
+      <meta name="description" content="Leafsnap is an electronic field guide for tree and plant species in New York City and Washington, DC." />
+      <link rel="stylesheet" type="text/css" href="../main.css">
+      <link rel="stylesheet" type="text/css" href="dataset.css" />
    </head>
    <body>
       <header>
@@ -22,10 +24,10 @@
       </header>
 
   <div id="dataset" class="datacode">
-    <h1>Leafsnap Dataset</h1>
+    <h1 style="padding-top: 25px;">Download Leafsnap Dataset</h1>
 
-    <p>To promote further research in leaf recognition, we are releasing the
-    <b>Leafsnap dataset</b>, which consists of images of leaves taken from two different sources, as well as their automatically-generated segmentations: </p><ol>
+    <p class="introParagraph">To promote further research in leaf recognition, we are releasing the
+    Leafsnap Dataset, which covers <a href="#specieslist">all <b>185</b> tree species</a> from the Northeastern US. The dataset consists of images of leaves taken from two different sources, as well as their automatically-generated segmentations: </p><ol>
         <li><b>23147 Lab</b> images, consisting of high-quality images taken of
         pressed leaves, from the Smithsonian collection. These images
         appear in controlled backlit and front-lit versions, with several
@@ -34,18 +36,28 @@
         mobile devices (iPhones mostly) in outdoor environments. These
         images contain varying amounts of blur, noise, illumination
         patterns, shadows, etc.</li>
-    </ol><p></p>
-    <p>The dataset currently covers <a href="#specieslist">all <b>185</b> tree species</a> from the Northeastern United States.</p>
-    <p>If you use this dataset, please cite the following paper:</p>
+    </ol>
+    <p class="downloadParagraph">To download the full Leafsnap dataset with original images, segmented images, text index of images, and readme, click the link below:</p>
+    <table class="downloads" style="text-align: left; margin-bottom: 25px;">
+        <tbody><tr><th></th><th>Size</th><th>Version</th><th>Last updated</th></tr>
+        <tr>
+            <td><a class="publicationLinks" href="../static/dataset/leafsnap-dataset.tar">Download</a></td>
+            <td>977MB</td>
+            <td>1.0</td><td>July 11, 2014</td>
+        </tr>
+    </tbody></table>
+
+    <p><b>NOTE:</b> The dataset released here doesn't exactly match that used to compute results for the paper, nor the currently running version on our servers.</p>
+    <p class="introParagraph">If you use this dataset, please cite the following paper:</p>
     <div class="publication" id="leafsnap_eccv2012">
         <div class="title">"Leafsnap: A Computer Vision System for Automatic Plant Species Identification,"</div>
         <div class="authors">Neeraj Kumar, Peter N. Belhumeur, Arijit Biswas, David W. Jacobs, W. John Kress, Ida C. Lopez, João V. B. Soares,</div>
         <div class="journal">Proceedings of the 12th European Conference on Computer Vision (ECCV),</div>
         <div class="date">October 2012</div>
         <div class="links">
-            <span class="link">[<a href="http://neerajkumar.org/base/papers/nk_eccv2012_leafsnap.pdf">paper (pdf)</a>]</span>
-            <span class="link">[<a href="http://neerajkumar.org/base/presentations/2012_leafsnap/leafsnap-eccv2012.pptx">slides (pptx)</a>]</span>
-            <span class="link">[<a class="fakelink" onclick="$(this).parents('.links').find('.bibref').slideToggle()">bibtex</a>]</span>
+            <span class="publicationLinks">[<a href="http://neerajkumar.org/base/papers/nk_eccv2012_leafsnap.pdf">paper (pdf)</a>]</span>
+            <span class="publicationLinks">[<a href="http://neerajkumar.org/base/presentations/2012_leafsnap/leafsnap-eccv2012.pptx">slides (pptx)</a>]</span>
+            <span class="publicationLinks">[<a class="fakelink" onclick="$(this).parents('.links').find('.bibref').slideToggle()">bibtex</a>]</span>
             <div class="bibref">
                 @InProceedings{leafsnap_eccv2012,<br>
                 author = {Neeraj Kumar and Peter N. Belhumeur and Arijit Biswas and David W. Jacobs and W. John Kress and Ida Lopez and João V. B. Soares},<br>
@@ -57,21 +69,9 @@
             </div>
         </div>
     </div>
-    <p><b>NOTE:</b> The dataset released here doesn't exactly match that used to compute results for the paper, nor the currently running version on our servers.</p>
+    <br>
     <p>For questions and comments, please contact contact@leafsnap.com.</p>
     
-
-    <h2 id="downloads">Downloads</h2>
-    <hr>
-    <table class="downloads">
-        <tbody><tr><th>Links</th><th>Description</th><th>Size</th><th>Version</th><th>Last updated</th></tr>
-        <tr>
-            <td><a href="../static/dataset/leafsnap-dataset.tar">Download</a></td>
-            <td class="description">Full Leafsnap dataset with original images, segmented images, text index of images, and <a href="../static/dataset/leafsnap-dataset-readme.txt">readme</a></td><td>977MB</td>
-            <td>1.0</td><td>July 11, 2014</td>
-        </tr>
-    </tbody></table>
-
     <h2 id="dataformat">Data format</h2>
     <hr>
     <p>The included <a href="../static/dataset/leafsnap-dataset-images.txt">leafsnap-dataset-images.txt</a> file contains a listing of all the images, in tab-separated format (tsv). The first line is the header row, which describes each column:</p>
@@ -111,46 +111,46 @@
             <tr class="example">
                 <td>Halesia tetraptera</td>
                 <td>
-                <a href="halesiaTetraptera/ny1025-09-1.jpg" target="_blank"><img class="eximg" src="halesiaTetraptera/ny1025-09-1-thumb.jpg"></a>
+                <a href="images/lab/halesiaTetraptera/ny1025-09-1.jpg" target="_blank"><img class="eximg" src="images/lab/halesiaTetraptera/ny1025-09-1-thumb.jpg"></a>
                 </td>
                 <td>
-                <a href="halesiaTetraptera/ny1025-09-1.png" target="_blank"><img class="exseg" src="halesiaTetraptera/ny1025-09-1-thumb.png"></a>
+                <a href="images/lab/halesiaTetraptera/ny1025-09-1.png" target="_blank"><img class="exseg" src="images/lab/halesiaTetraptera/ny1025-09-1-thumb.png"></a>
                 </td>
                 <td>
-                <a href="halesiaTetraptera/13001949635157.jpg" target="_blank"><img class="eximg" src="halesiaTetraptera/13001949635157-thumb.jpg"></a>
+                <a href="images/lab/halesiaTetraptera/13001949635157.jpg" target="_blank"><img class="eximg" src="images/lab/halesiaTetraptera/13001949635157-thumb.jpg"></a>
                 </td>
                 <td>
-                <a href="halesiaTetraptera/13001949635157.png" target="_blank"><img class="exseg" src="halesiaTetraptera/13001949635157-thumb.png"></a>
+                <a href="images/lab/halesiaTetraptera/13001949635157.png" target="_blank"><img class="exseg" src="images/lab/halesiaTetraptera/13001949635157-thumb.png"></a>
                 </td>
             </tr>
             <tr class="example">
                 <td>Ostrya virginiana</td>
                 <td>
-                <a href="ostryaVirginiana/pi2195-09-1.jpg" target="_blank"><img class="eximg" src="ostryaVirginiana/pi2195-09-1-thumb.jpg"></a>
+                <a href="images/lab/ostryaVirginiana/pi2195-09-1.jpg" target="_blank"><img class="eximg" src="images/lab/ostryaVirginiana/pi2195-09-1-thumb.jpg"></a>
                 </td>
                 <td>
-                <a href="ostryaVirginiana/pi2195-09-1.png" target="_blank"><img class="exseg" src="ostryaVirginiana/pi2195-09-1-thumb.png"></a>
+                <a href="images/lab/ostryaVirginiana/pi2195-09-1.png" target="_blank"><img class="exseg" src="images/lab/ostryaVirginiana/pi2195-09-1-thumb.png"></a>
                 </td>
                 <td>
-                <a href="ostryaVirginiana/13001985584752.jpg" target="_blank"><img class="eximg" src="ostryaVirginiana/13001985584752-thumb.jpg"></a>
+                <a href="images/lab/ostryaVirginiana/13001985584752.jpg" target="_blank"><img class="eximg" src="images/lab/ostryaVirginiana/13001985584752-thumb.jpg"></a>
                 </td>
                 <td>
-                <a href="ostryaVirginiana/13001985584752.png" target="_blank"><img class="exseg" src="ostryaVirginiana/13001985584752-thumb.png"></a>
+                <a href="images/lab/ostryaVirginiana/13001985584752.png" target="_blank"><img class="exseg" src="images/lab/ostryaVirginiana/13001985584752-thumb.png"></a>
                 </td>
             </tr>
             <tr class="example">
                 <td>Nyssa sylvatica</td>
                 <td>
-                <a href="nyssaSylvatica/ny1130-03-1.jpg" target="_blank"><img class="eximg" src="../static/dataset/images/lab/nyssa_sylvatica/ny1130-03-1-thumb.jpg"></a>
+                <a href="images/lab/nyssaSylvatica/ny1130-03-1.jpg" target="_blank"><img class="eximg" src="images/lab/NyssaSylvatica/ny1130-03-1-thumb.jpg"></a>
                 </td>
                 <td>
-                <a href="../static/dataset/segmented/lab/nyssa_sylvatica/ny1130-03-1.png" target="_blank"><img class="exseg" src="../static/dataset/segmented/lab/nyssa_sylvatica/ny1130-03-1-thumb.png"></a>
+                <a href="images/lab/nyssaSylvatica/ny1130-03-1.png" target="_blank"><img class="exseg" src="images/lab/NyssaSylvatica/ny1130-03-1-thumb.png"></a>
                 </td>
                 <td>
-                <a href="../static/dataset/images/field/nyssa_sylvatica/12992004640275.jpg" target="_blank"><img class="eximg" src="../static/dataset/images/field/nyssa_sylvatica/12992004640275-thumb.jpg"></a>
+                <a href="images/lab/nyssaSylvatica/12992004640275.jpg" target="_blank"><img class="eximg" src="images/lab/NyssaSylvatica/12992004640275-thumb.jpg"></a>
                 </td>
                 <td>
-                <a href="../static/dataset/segmented/field/nyssa_sylvatica/12992004640275.png" target="_blank"><img class="exseg" src="../static/dataset/segmented/field/nyssa_sylvatica/12992004640275-thumb.png"></a>
+                <a href="images/lab/nyssaSylvatica/12992004640275.png" target="_blank"><img class="exseg" src="images/lab/NyssaSylvatica/12992004640275-thumb.png"></a>
                 </td>
             </tr>
         </tbody>

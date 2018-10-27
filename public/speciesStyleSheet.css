@@ -1,5 +1,6 @@
 a{
         color:   #000000;
+        text-decoration:none;
 }
 
 body {
@@ -10,12 +11,22 @@ body {
         font-size:18px;
         text-align: justify;
         text-justify: auto;
+    color: #232323;
+    background: #F0F0F0;
+    text-align: center;
+    margin: 0px auto;
 }
+
+li {
+    display: list-item;
+}
+
 
 header{
     position:relative;
     background-color:white;
     z-index:1;
+    width:100%;
 }
 
 /*Navigation Bar*/ 
@@ -59,21 +70,20 @@ nav li a{
 div#species ul.tabs {
     padding-left: 20px;
     padding-top: 20px;
-    border-bottom: 1px solid gray;
+    border-bottom:1px solid #aaaaaa;
 }
 .ui-tabs .ui-tabs-nav {
     margin: 0;
     padding: .2em .2em 0;
 }
 .ui-corner-all {
-    -moz-border-radius: 4px;
-    -webkit-border-radius: 4px;
-    border-radius: 4px;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
 }
 .ui-widget-header {
-    border: 1px solid #000000;
     color: #222222;
     font-weight: bold;
+    background: #BEE872;
 }
 .ui-helper-clearfix {
     display: block;
@@ -104,8 +114,6 @@ ul, menu, dir {
     -webkit-padding-start: 40px;
 }
 .ui-widget-content {
-    border: 1px solid #aaaaaa;
-    color: #ffffff;
 }
 .ui-widget {
     font-family: Tahoma, Helvetica, Arial, sans-serif;
@@ -116,22 +124,11 @@ ul, menu, dir {
     padding: 0;
     font-family: Tahoma, Helvetica, Arial, sans-serif;
 }
+
 * {
     margin: 0;
     padding: 0;
     font-family: Tahoma, Helvetica, Arial, sans-serif;
-}
-* {
-    margin: 0;
-    padding: 0;
-    font-family: Tahoma, Helvetica, Arial, sans-serif;
-}
-body {
-    color: white;
-    text-align: center;
-    font-family: Tahoma, Helvetica, Arial, sans-serif;
-    margin: 0px auto;
-    width: 1140px;
 }
 
 li {
@@ -147,21 +144,73 @@ li {
 }
 
 
-
 .ui-tabs .ui-tabs-nav li {
     list-style: none;
     float: left;
     position: relative;
     top: 1px;
-    margin: 0 .2em 1px 0;
+    width: 175px;
     border-bottom: 0 !important;
     padding: 0;
     white-space: nowrap;
 }
 
-.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
-    border: 1px solid #111111;
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active{
+    border: 1px solid #aaaaaa;
+    background: #ffffff;
     font-weight: normal;
-    color: #ffffff;
 }
 
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+    font-weight: normal;
+    font-weight: normal;
+}
+
+#intro{
+    background:#F0F0F0;
+    width:100%;
+    height:100%;
+    margin-top:25px;
+    margin-bottom:25px;
+    text-align:center;
+}
+
+#intro p{
+    width:60%;
+    text-align:center;
+    position:relative;
+    margin:auto;
+}
+
+#speciesTable{
+    background:#F0F0F0;
+}
+
+#content{
+   background:#FFFFFF;
+   margin-right:20px;
+   margin-left:20px;
+   margin-bottom:20px;
+   border-top-right-radius: 4px;
+   border-top-left-radius: 4px;
+}
+
+#species-1{
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+#species-2{
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+#species-3{
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+#species-4{
+    margin-top: 20px;
+    margin-left: 30px;
+}

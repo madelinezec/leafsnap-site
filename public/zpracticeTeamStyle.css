@@ -14,14 +14,14 @@ body {
 }
 
 section.history{
-    background: linear-gradient(#BEE872,#429321);
     background-repeat: no-repeat;
     background-attachment: fixed;
     margin:auto;
-    color: #FFFFFF;
+    color: #232323;
     display:inline-block;
     text-align:center;
     width:100%;
+    background:#FBFBFB;
 }
 
 
@@ -33,7 +33,7 @@ section.history h2{
 
 .headline {
     display:inline-block;
-    width: 40%;
+    width: 60%;
     margin-bottom:10px;
     font-style:normal;
     line-height: normal;
@@ -45,13 +45,15 @@ section.history h2{
     width:80%;
     overflow: hidden;
     margin:auto;
+    margin-bottom:20px;
     display:block;
-    text-align:left;
+    text-align:justify;
     column-count:2;
+    column-gap:5%;
 }
 
 .text a{
-    color:#F5F8F4;
+    color:#000;
 }
 .container {
     position: relative;
@@ -93,7 +95,7 @@ input:checked ~ div {
 }
 section.team{
     margin: auto;
-    background: #FEFEFE;
+    background: #FBFBFB;
     display:inline-block;
 }
 
@@ -106,7 +108,6 @@ section.team{
 
 .team-listing li{
     display:inline-block;
-    width: 300px;
     overflow: hidden;
     float:left;
     height: 340px;
@@ -116,26 +117,32 @@ section.team{
 }
 
 .team-listing ul{
-    display:table;
-    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+    flex-flow: row wrap;
+    flex-shrink: 1;
+    flex-grow: 1;
+    float: left;
+    min-width: 0;
+    max-width: 100%;
+    position: relative;
     filter: drop-shadow(5px 5px 5px rgba(2,2,22,0.1));
-    white-space: nowrap;
-    width:80%;
-    margin:auto;
-}
-
-a {
-  display: inline-block;
 }
 
 article {
   position: relative;
   width: 300px;
-  height: 350px;
+  height: 340px;
   /* prevent scaled circle ring from triggering hover */
   overflow: hidden;
 }
 
+
+article:hover {
+  background-color: #000;
+}
 
 /* create the colour overlay */
 article:after {
@@ -148,6 +155,9 @@ article:after {
   display: none;
   background: rgba(0, 255, 255, .2);
   z-index: 3;
+  background-color: #2b9bdf;
+  background-image: linear-gradient(to bottom,#2b9bdf,#0bbdd7,#a8dbe9);
+  opacity:0.5;
 }
 
 
@@ -155,6 +165,7 @@ article:after {
 .img-full {
   position: absolute;
   top: 0;
+  right:0;
   z-index: 2;
   /* hide the full image initially */
   display: none;
@@ -173,6 +184,7 @@ article:after {
 
 a:hover .img-full,
 a:hover article:after {
+  position:absolute;
   display: block;
 }
 
@@ -204,4 +216,31 @@ h4 {
 
 h4 {
   font-weight: 300;
+}
+
+
+.portrait {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+}
+.portrait image {
+    clip-path: url(#circle);
+}
+a:hover .portrait image {
+    clip-path: none;
+}
+.ring {
+    fill: none;
+    stroke: white;
+    stroke-width: 1;
+    opacity: 0;
+    transform-origin: 50% 50%;
+    transform: scale(1.8);
+    transition: transform .3s ease, opacity .4s ease;
+}
+a:hover .ring {
+    opacity: 1;
+    transform: scale(1);
 }

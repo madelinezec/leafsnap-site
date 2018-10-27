@@ -1,305 +1,656 @@
 <!DOCTYPE html>
 <html>
-   <head>
-      <title>Leafsnap</title>
-      <meta charset="utf-8" />
-      <link rel="stylesheet" type="text/css" href="team.css">
-      <link rel="stylesheet" type="text/css" href="../main.css">
-   </head>
-   <body>
-        <nav>
-            <h1 class="page-title">
-               <a href="index.html">
-               <img src="../leafsnap_logo.png" style="width:197px;height:71px;border:0;">
+
+  <head>
+    <title>Leafsnap</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="team.css">
+    <link rel="stylesheet" type="text/css" href="../main.css">
+  </head>
+
+  <body>
+    <nav>
+      <h1 class="page-title">
+        <a href="../index.html">
+               <img src="leafsnap_logo.png" style="width:197px;height:71px;border:0;">
                </a>
-            </h1>
-            <ul>
-               <li><a class="active" href="species.html">Species</a></li>
-               <li><a class="active" href="support.html">Support</a></li>
-               <li><a href="https://itunes.apple.com/us/app/leafsnap/id430649829?mt=8">Download</a></li>
-            </ul>
-         </nav>
- <section class="About">
-          <h2>Our Story</h2>
-          <input id="ch" type="checkbox">
-          <div class = "text">
-        <p>The genesis of Leafsnap was the realization that many techniques used for face recognition developed by Professor <a href="http://www.cs.columbia.edu/~belhumeur/" target="_blank">Peter Belhumeur</a> and Professor <a href="http://www.cs.umd.edu/~djacobs/" target="_blank">David Jacobs</a>, of the Computer Science departments of Columbia University and the University of Maryland, respectively, could be applied to automatic species identification.</p>
-
-        <p>Professors Jacobs and Belhumeur approached <a href="http://botany.si.edu/staff/staffPage.cfm?ThisName=2&amp;homepage=no" target="_blank">Dr. John Kress</a>, Research Botanist and Curator at the Smithsonian to start a collaborative effort for designing and building such a system for plant species. Columbia University and the University of Maryland designed and implemented the visual recognition system used for automatic identification. In addition, Columbia University designed and wrote the iPhone, and iPad apps, the leafsnap.com website, and wrote the code that powers the recognition servers. The Smithsonian was instrumental in collecting the datasets of leaf species and supervising the curation efforts throughout the course of the project. As part of this effort, the Smithsonian contracted the not-for-profit nature photography group <a href="http://findingspecies.org" target="_blank">Finding Species</a>, which collected and photographed the high-quality photos available in the apps and the website).</p>
-          </div>
-          <label for="ch"></label>
-      </input>
-      </section>
-
-      <div id="content">
-
-            <div class="labs">
-               <div class="lab">
-                  <h2 class="labname"><a href="http://www.cs.columbia.edu/~belhumeur/" target="_blank">Columbia University</a></h2>
-                  <hr>
-                  <div class="peoplecard">
-                     <img src="http://api.leafsnap.com/v1/team/images/columbia/Weikang.jpg?h=240" title="Weikang Wan">
-                     <p><span class="peoplename">Weikang Wan</span> is building an automated tool for data curation.</p>
-                  </div>
-                  <div class="peoplecard">
-                     <img src="http://api.leafsnap.com/v1/team/images/columbia/Joseph.jpg?h=240" title="Joseph Lin">
-                     <p><span class="peoplename">Joseph Lin</span> helped develop the iPhone app and was one of the original Central Park Collectors.</p>
-                  </div>
-                  <div class="peoplecard">
-                     <img src="http://api.leafsnap.com/v1/team/images/columbia/Steve.jpg?h=240" title="Steve Feiner">
-                     <p><span class="peoplename">Steve Feiner</span> is helping supervise the design of the user interfaces.</p>
-                  </div>
-                  <div class="peoplecard">
-                     <img src="http://api.leafsnap.com/v1/team/images/columbia/Guangyu.jpg?h=240" title="Guangyu Sun">
-                     <p><span class="peoplename">Guangyu Sun</span> is investigating new leaf identification algorithms.</p>
-                  </div>
-                  <div class="peoplecard">
-                     <img src="http://api.leafsnap.com/v1/team/images/columbia/Wei.jpg?h=240" title="Wei Li">
-                     <p><span class="peoplename">Wei Li</span> designed the Leaflet game and has worked on automating our image editing pipeline.</p>
-                  </div>
-                  <div class="peoplecard">
-                     <img src="http://api.leafsnap.com/v1/team/images/columbia/Wenxin.jpg?h=240" title="Wenxin Zhu">
-                     <p><span class="peoplename">Wenxin Zhu</span> is developing the Android app.</p>
-                  </div>
-                  <div class="peoplecard">
-                     <img src="http://api.leafsnap.com/v1/team/images/columbia/Ila.jpg?h=240" title="Ila Agrawal">
-                     <p><span class="peoplename">Ila Agrawal</span> helped with leaf identification.</p>
-                  </div>
-                  <div class="peoplecard">
-                     <img src="http://api.leafsnap.com/v1/team/images/columbia/Yu.jpg?h=240" title="Yu Huang">
-                     <p><span class="peoplename">Yu Huang</span> is working on testing the website and API.</p>
-                  </div>
-                  <div class="peoplecard">
-                     <img src="http://api.leafsnap.com/v1/team/images/columbia/Yang.jpg?h=240" title="Oliver Sui">
-                     <p><span class="peoplename">Oliver Sui</span> is developing the Android app.</p>
-                  </div>
-                  <div class="peoplecard">
-                     <img src="http://api.leafsnap.com/v1/team/images/columbia/Ivy.jpg?h=240" title="Ivy Deliz">
-                     <p><span class="peoplename">Ivy Deliz</span> started the iPad app, helped develop the iPhone app, and lent a hand in the design of the Leaflet game.</p>
-                  </div>
-                  <div class="peoplecard">
-                     <img src="http://api.leafsnap.com/v1/team/images/columbia/Peiti.jpg?h=240" title="Peiti Li">
-                     <p><span class="peoplename">Peiti Li</span> is developing the website.</p>
-                  </div>
-                  <div class="peoplecard">
-                     <img src="http://api.leafsnap.com/v1/team/images/columbia/Aman.jpg?h=240" title="Aman Agrawal">
-                     <p><span class="peoplename">Aman Agrawal</span> improved the performance of the feature extraction code.</p>
-                  </div>
-                  <div class="peoplecard">
-                     <img src="http://api.leafsnap.com/v1/team/images/columbia/Peter.jpg?h=240" title="<a href=&quot;http://www.cs.columbia.edu/~belhumeur/&quot; target=&quot;_blank&quot;>Peter Belhumeur</a>">
-                     <p><span class="peoplename"><a href="http://www.cs.columbia.edu/~belhumeur/" target="_blank">Peter Belhumeur</a></span> supervises the Columbia team.</p>
-                  </div>
-                  <div class="peoplecard">
-                     <img src="http://api.leafsnap.com/v1/team/images/columbia/Sean.jpg?h=240" title="Sean White">
-                     <p><span class="peoplename">Sean White</span> lead the design and development of early tablet PC, UMPC, and mobile phone prototypes and helped with the initial design of the current iPhone app.</p>
-                  </div>
-                  <div class="peoplecard">
-                     <img src="http://api.leafsnap.com/v1/team/images/columbia/CCK.jpg?h=240" title="Chun-Kang Chen">
-                     <p><span class="peoplename">Chun-Kang Chen</span> is automating the backend processing pipeline.</p>
-                  </div>
-                  <div class="peoplecard">
-                     <img src="http://api.leafsnap.com/v1/team/images/columbia/Qi.jpg?h=240" title="Qi Liang">
-                     <p><span class="peoplename">Qi Liang</span> helped work on the website design.</p>
-                  </div>
-                  <div class="peoplecard">
-                     <img src="http://api.leafsnap.com/v1/team/images/columbia/Wei_An.jpg?h=240" title="Wei An">
-                     <p><span class="peoplename">Wei An</span> is developing the website.</p>
-                  </div>
-                  <div class="peoplecard">
-                     <img src="http://api.leafsnap.com/v1/team/images/columbia/Vinay.jpg?h=240" title="Vinay Kumar">
-                     <p><span class="peoplename">Vinay Kumar</span> stress-tested the backend and worked on database management.</p>
-                  </div>
-                  <div class="peoplecard">
-                     <img src="http://api.leafsnap.com/v1/team/images/columbia/Yin.jpg?h=240" title="Yin Liu">
-                     <p><span class="peoplename">Yin Liu</span> is developing the website.</p>
-                  </div>
-                  <div class="peoplecard">
-                     <img src="http://api.leafsnap.com/v1/team/images/columbia/Priyank.jpg?h=240" title="Priyank Singh">
-                     <p><span class="peoplename">Priyank Singh</span> worked on improving the leaf identification algorithms.</p>
-                  </div>
-                  <div class="peoplecard">
-                     <img src="http://api.leafsnap.com/v1/team/images/columbia/Gaurav.jpg?h=240" title="Gaurav Agrawal">
-                     <p><span class="peoplename">Gaurav Agrawal</span> explored the use of SIFT for leaf recognition.</p>
-                  </div>
-                  <div class="peoplecard">
-                     <img src="http://api.leafsnap.com/v1/team/images/columbia/Jian.jpg?h=240" title="Jian Ma">
-                     <p><span class="peoplename">Jian Ma</span> originally created the website and is working on its design.</p>
-                  </div>
-                  <div class="peoplecard">
-                     <img src="http://api.leafsnap.com/v1/team/images/columbia/Vincent.jpg?h=240" title="Vincent Zeng">
-                     <p><span class="peoplename">Vincent Zeng</span> worked on profiling and porting the segmentation and recognition code to the iPhone.</p>
-                  </div>
-                  <div class="peoplecard">
-                     <img src="http://api.leafsnap.com/v1/team/images/columbia/Paul.jpg?h=240" title="Paul Vishayanuroj">
-                     <p><span class="peoplename">Paul Vishayanuroj</span> is developing the iPhone app.</p>
-                  </div>
-                  <div class="peoplecard">
-                     <img src="http://api.leafsnap.com/v1/team/images/columbia/Jacky.jpg?h=240" title="Jacky Jacob">
-                     <p><span class="peoplename">Jacky Jacob</span> helped develop the iPhone app.</p>
-                  </div>
-                  <div class="peoplecard">
-                     <img src="http://api.leafsnap.com/v1/team/images/columbia/Emma.jpg?h=240" title="Emma Liu">
-                     <p><span class="peoplename">Emma Liu</span> is developing the iPad app.</p>
-                  </div>
-                  <div class="peoplecard">
-                     <img src="http://api.leafsnap.com/v1/team/images/columbia/Yu-Wei.jpg?h=240" title="Yu-Wei Chang">
-                     <p><span class="peoplename">Yu-Wei Chang</span> is developing the iPad app.</p>
-                  </div>
-                  <div class="peoplecard">
-                     <img src="http://api.leafsnap.com/v1/team/images/columbia/Yi.jpg?h=240" title="Yi Zhang">
-                     <p><span class="peoplename">Yi Zhang</span> is developing the Android app.</p>
-                  </div>
-                  <div class="peoplecard">
-                     <img src="http://api.leafsnap.com/v1/team/images/columbia/Neeraj.jpg?h=240" title="<a href=&quot;http://www.cs.columbia.edu/~neeraj/&quot; target=&quot;_blank&quot;>Neeraj Kumar</a>">
-                     <p><span class="peoplename"><a href="http://www.cs.columbia.edu/~neeraj/" target="_blank">Neeraj Kumar</a></span> is leading the software development effort.</p>
-                  </div>
-               </div>
-               <div class="lab">
-                  <h2 class="labname"><a href="http://www.cs.umd.edu/~djacobs/" target="_blank">University of Maryland</a></h2>
-                  <hr>
-                  <div class="peoplecard">
-                     <img src="http://api.leafsnap.com/v1/team/images/umd/Haibin.jpg?h=240" title="<a href=&quot;http://www.dabi.temple.edu/~hbling/&quot; target=&quot;_blank&quot;>Haibin Ling</a>">
-                     <p><span class="peoplename"><a href="http://www.dabi.temple.edu/~hbling/" target="_blank">Haibin Ling</a></span> designed the original leaf recognition algorithm and participated in the development of the initial electronic field guide (EFG) prototype.</p>
-                  </div>
-                  <div class="peoplecard">
-                     <img src="http://api.leafsnap.com/v1/team/images/umd/Aditya.jpg?h=240" title="Aditya Malik">
-                     <p><span class="peoplename">Aditya Malik</span> is working on image segmentation for leaves.</p>
-                  </div>
-                  <div class="peoplecard">
-                     <img src="http://api.leafsnap.com/v1/team/images/umd/Daozheng.jpg?h=240" title="Daozheng Chen">
-                     <p><span class="peoplename">Daozheng Chen</span> has worked on speeding up the recognition code.</p>
-                  </div>
-                  <div class="peoplecard">
-                     <img src="http://api.leafsnap.com/v1/team/images/umd/Arjit.jpg?h=240" title="Arijit Biswas">
-                     <p><span class="peoplename">Arijit Biswas</span> is working on improving the leaf identification algorithms.</p>
-                  </div>
-                  <div class="peoplecard">
-                     <img src="http://api.leafsnap.com/v1/team/images/umd/Angjoo.jpg?h=240" title="Angjoo Kanazawa">
-                     <p><span class="peoplename">Angjoo Kanazawa</span> is working on improving the leaf recognition algorithm.</p>
-                  </div>
-                  <div class="peoplecard">
-                     <img src="http://api.leafsnap.com/v1/team/images/umd/David.jpg?h=240" title="<a href=&quot;http://www.cs.umd.edu/~djacobs/&quot; target=&quot;_blank&quot;>David Jacobs</a>">
-                     <p><span class="peoplename"><a href="http://www.cs.umd.edu/~djacobs/" target="_blank">David Jacobs</a></span> supervises the University of Maryland team.</p>
-                  </div>
-                  <div class="peoplecard">
-                     <img src="http://api.leafsnap.com/v1/team/images/umd/Joao.jpg?h=240" title="Joao Soares">
-                     <p><span class="peoplename">Joao Soares</span> is working on image segmentation for leaves.</p>
-                  </div>
-               </div>
-               <div class="lab">
-                  <h2 class="labname"><a href="http://botany.si.edu/staff/staffPage.cfm?ThisName=2&amp;homepage=no" target="_blank">Smithsonian Institution</a></h2>
-                  <hr>
-                  <div class="peoplecard">
-                     <img src="http://api.leafsnap.com/v1/team/images/smithsonian/James.jpg?h=240" title="James Short">
-                     <p><span class="peoplename">James Short</span> is a long-term volunteer in the Smithsonian Botany Department. He assists with specimen and image data processing.</p>
-                  </div>
-                  <div class="peoplecard">
-                     <img src="http://api.leafsnap.com/v1/team/images/smithsonian/Norm.jpg?h=240" title="Norm Bourg">
-                     <p><span class="peoplename">Norm Bourg</span> has collected plants and worked on the development of early electronic field guide prototypes that eventually led to LeafSnap.</p>
-                  </div>
-                  <div class="peoplecard">
-                     <img src="http://api.leafsnap.com/v1/team/images/smithsonian/Ida.jpg?h=240" title="Ida C. Lopez">
-                     <p><span class="peoplename">Ida C. Lopez</span> is the project coordinator at Smithsonian.  She also led the collection expedition into the wilds of Central Park in New York City.</p>
-                  </div>
-                  <div class="peoplecard">
-                     <img src="http://api.leafsnap.com/v1/team/images/smithsonian/John.jpg?h=240" title="<a href=&quot;http://botany.si.edu/staff/staffPage.cfm?ThisName=2&amp;homepage=no&quot; target=&quot;_blank&quot;>W. John Kress</a>">
-                     <p><span class="peoplename"><a href="http://botany.si.edu/staff/staffPage.cfm?ThisName=2&amp;homepage=no" target="_blank">W. John Kress</a></span>, PhD. is the Principal Investigator of the Leaf Project at the Smithsonian.</p>
-                  </div>
-                  <div class="peoplecard">
-                     <img src="http://api.leafsnap.com/v1/team/images/smithsonian/Rusty.jpg?h=240" title="Rusty Russell">
-                     <p><span class="peoplename">Rusty Russell</span>, US Herbarium Manager, is the Smithsonian co-investigator for the project.</p>
-                  </div>
-                  <div class="peoplecard">
-                     <img src="http://api.leafsnap.com/v1/team/images/smithsonian/Jamie.jpg?h=240" title="Jamie Whitacre">
-                     <p><span class="peoplename">Jamie Whitacre</span> is the Smithsonian database developer for the project.</p>
-                  </div>
-                  <div class="peoplecard">
-                     <img src="http://api.leafsnap.com/v1/team/images/smithsonian/Daniel.jpg?h=240" title="Daniel Grant">
-                     <p><span class="peoplename">Daniel Grant</span> is a long-term volunteer in the Smithsonian Botany Department. He assists with specimen and image data processing.</p>
-                  </div>
-                  <div class="peoplecard">
-                     <img src="http://api.leafsnap.com/v1/team/images/smithsonian/Ingrid.jpg?h=240" title="Ingrid Pol-Yin Lin">
-                     <p><span class="peoplename">Ingrid Pol-Yin Lin</span> is the Smithsonian photographer who images voucher specimens and leaves used in the project.</p>
-                  </div>
-                  <div class="peoplecard">
-                     <img src="http://api.leafsnap.com/v1/team/images/smithsonian/Ellen.jpg?h=240" title="Ellen Farr">
-                     <p><span class="peoplename">Ellen Farr</span> is the Smithsonian Botany Department computer specialist.</p>
-                  </div>
-               </div>
-               <div class="lab">
-                  <h2 class="labname"><a href="http://www.findingspecies.org/" target="_blank">Finding Species</a></h2>
-                  <hr>
-                  <div class="peoplecard">
-                     <img src="http://api.leafsnap.com/v1/team/images/findingspecies/Leonel_Velasquez.png?h=240" title="Leonel Velasquez">
-                     <p><span class="peoplename">Leonel Velasquez</span> interns for the Finding Species&nbsp;team on LeafSnap special expeditions.</p>
-                  </div>
-                  <div class="peoplecard">
-                     <img src="http://api.leafsnap.com/v1/team/images/findingspecies/Gorky_Villa.png?h=240" title="Gorky F. Villa Muñoz">
-                     <p><span class="peoplename">Gorky F. Villa Muñoz</span> is the lead Finding Species botanist for LeafSnap.&nbsp;He collects and photographs plants throughout the US and manages databases.</p>
-                  </div>
-                  <div class="peoplecard">
-                     <img src="http://api.leafsnap.com/v1/team/images/findingspecies/Christopher_Lewis.jpg?h=240" title="Christopher Lewis">
-                     <p><span class="peoplename">Christopher Lewis</span> located and identified plants, while providing feedback on the botanical aspects of the high-resolution photographs.</p>
-                  </div>
-                  <div class="peoplecard">
-                     <img src="http://api.leafsnap.com/v1/team/images/findingspecies/Bejat_McCracken.png?h=240" title="Bejat McCracken">
-                     <p><span class="peoplename">Bejat McCracken</span> is the lead Finding Species photographer for LeafSnap. She supervises the project, trains the botanical photographers, and processes photos.</p>
-                  </div>
-                  <div class="peoplecard">
-                     <img src="http://api.leafsnap.com/v1/team/images/findingspecies/Roxana_Bravo.png?h=240" title="Roxana Bravo">
-                     <p><span class="peoplename">Roxana Bravo</span> has refined details in the high-resolution photographic method, and has photographed plants.</p>
-                  </div>
-                  <div class="peoplecard">
-                     <img src="http://api.leafsnap.com/v1/team/images/findingspecies/Hugo_Mogollon.png?h=240" title="Hugo Mogollon">
-                     <p><span class="peoplename">Hugo Mogollon</span>&nbsp;has supervised the Finding Species team, in the US and South America.</p>
-                  </div>
-                  <div class="peoplecard">
-                     <img src="http://api.leafsnap.com/v1/team/images/findingspecies/Margot_Bass.png?h=240" title="Margot S. Bass">
-                     <p><span class="peoplename">Margot S. Bass</span> coordinated the Finding Species LeafSnap US team, and conceived the standardized high-resolution plant photographs.</p>
-                  </div>
-                  <div class="peoplecard">
-                     <img src="http://api.leafsnap.com/v1/team/images/findingspecies/Diego_Acosta.png?h=240" title="Diego Acosta">
-                     <p><span class="peoplename">Diego Acosta</span> assisted with processing and editing photographs, and photographed plants on special expeditions.</p>
-                  </div>
-                  <div class="peoplecard">
-                     <img src="http://api.leafsnap.com/v1/team/images/findingspecies/Neil_Kaufman.jpg?h=240" title="Neil Kaufman">
-                     <p><span class="peoplename">Neil Kaufman</span> interns for Finding Species writing Plant Profiles and working with photographic databases.</p>
-                  </div>
-                  <div class="peoplecard">
-                     <img src="http://api.leafsnap.com/v1/team/images/findingspecies/Linda_Keenan.png?h=240" title="Linda Keenan">
-                     <p><span class="peoplename">Linda Keenan</span> writes Plant Profiles and has collected plants in the DC and Boston areas.</p>
-                  </div>
-                  <div class="peoplecard">
-                     <img src="http://api.leafsnap.com/v1/team/images/findingspecies/Martin_Bustamante.png?h=240" title="Martin Bustamante">
-                     <p><span class="peoplename">Martin Bustamante</span>&nbsp;has coordinated the Finding Species photographers and solved photographic challenges.</p>
-                  </div>
-                  <div class="peoplecard">
-                     <img src="http://api.leafsnap.com/v1/team/images/findingspecies/Michelle_Downey.png?h=240" title="Michelle Downey">
-                     <p><span class="peoplename">Michelle Downey</span> collected plants in the Southeastern US and processed photographs.</p>
-                  </div>
-                  <div class="peoplecard">
-                     <img src="http://api.leafsnap.com/v1/team/images/findingspecies/Norm_Bourg.jpg?h=240" title="Norm Bourg">
-                     <p><span class="peoplename">Norm Bourg</span> has collected plants and worked on the development of early electronic field guide prototypes that eventually led to LeafSnap.</p>
-                  </div>
-                  <div class="peoplecard">
-                     <img src="http://api.leafsnap.com/v1/team/images/findingspecies/Yuri_Huta.png?h=240" title="Yuri Huta">
-                     <p><span class="peoplename">Yuri Huta</span> created Finding Species'' photographic method for the high-resolution photographs in LeafSnap, and has photographed plants.</p>
-                  </div>
-                  <div class="peoplecard">
-                     <img src="http://api.leafsnap.com/v1/team/images/findingspecies/Matthew_Smith.png?h=240" title="Matthew Smith">
-                     <p><span class="peoplename">Matthew Smith</span> has collected plants in the DC area.</p>
-                  </div>
-                  <div class="peoplecard">
-                     <img src="http://api.leafsnap.com/v1/team/images/findingspecies/Mike_Honsaker.png?h=240" title="Michael Honsaker">
-                     <p><span class="peoplename">Michael Honsaker</span> has provided technology support and maintained photographic metadata.</p>
-                  </div>
-                  <div class="peoplecard">
-                     <img src="http://api.leafsnap.com/v1/team/images/findingspecies/Tanya_Tarasova.png?h=240" title="Tanya Tarasova">
-                     <p><span class="peoplename">Tanya Tarasova</span> has researched flowering times, coordinated expeditions, and assisted with permits. She has provided administrative oversight.</p>
-                  </div>
-               </div>
-            </div>
-         </div>
+      </h1>
+      <ul>
+        <li><a class="active" href="../species.html">Species</a></li>
+        <li><a class="active" href="../support.html">Support</a></li>
+        <li><a href="https://itunes.apple.com/us/app/leafsnap/id430649829?mt=8">Download</a></li>
+      </ul>
+    </nav>
+    <section class="content-wrapper history">
+      <div class="title">
+        <h2>About Us</h2>
       </div>
-   </body>
+      <input id="ch" type="checkbox">
+      <div class="headline">
+        <p>Columbia University, the University of Maryland, and the Smithsonian Institution are working on visual recognition software to help identify species from photographs.</p>
+      </div>
+      <div class="text">
+        <p>The genesis of Leafsnap was the realization that many techniques used for face recognition developed by Professor <a href="http://www.cs.columbia.edu/~belhumeur/" target="_blank">Peter Belhumeur</a> and Professor <a href="http://www.cs.umd.edu/~djacobs/"
+            target="_blank">David Jacobs</a>, of the Computer Science departments of Columbia University and the University of Maryland, respectively, could be applied to automatic species identification.</p>
+
+        <p>Professors Jacobs and Belhumeur approached <a href="http://botany.si.edu/staff/staffPage.cfm?ThisName=2&amp;homepage=no" target="_blank">Dr. John Kress</a>, Research Botanist and Curator at the Smithsonian to start a collaborative effort for designing
+          and building such a system for plant species. Columbia University and the University of Maryland designed and implemented the visual recognition system used for automatic identification. In addition, Columbia University designed and wrote the
+          iPhone, and iPad apps, the leafsnap.com website, and wrote the code that powers the recognition servers. The Smithsonian was instrumental in collecting the datasets of leaf species and supervising the curation efforts throughout the course of
+          the project. As part of this effort, the Smithsonian contracted the not-for-profit nature photography group <a href="http://findingspecies.org" target="_blank">Finding Species</a>, which collected and photographed the high-quality photos available
+          in the apps and the website).</p>
+      </div>
+      <label for="ch"></label>
+      </input>
+    </section>
+    <section class="content-wrapper team">
+      <!--      <h3>Columbia</h3> -->
+      <div class="team-listing">
+        <ul>
+          <li>
+            <svg width="0" height="0">
+          <clipPath id="circle">
+              <circle cx="150" cy="150" r="100"/>
+          </clipPath>
+      </svg>
+            <a href="#">
+              <article>
+                <svg class="portrait" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+      <!-- no automatic sizing for SVG image, width and height must be set -->
+              <image width="300" height="340" x="0" y="-20"
+             xlink:href="finishedBW/Neeraj.jpg__.jpg"/>
+              <circle class="ring" cx="150" cy="150" r="100" />
+          </svg>
+                <div class="bio">
+                  <h2>Full Name</h2>
+                  <h4>Article Subtitle</h4>
+                </div>
+              </article>
+            </a>
+          </li>
+          <li>
+            <svg width="0" height="0">
+          <clipPath id="circle">
+              <circle cx="150" cy="150" r="100"/>
+          </clipPath>
+      </svg>
+            <a href="#">
+              <article>
+                <svg class="portrait" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+      <!-- no automatic sizing for SVG image, width and height must be set -->
+              <image width="300" height="340" x="0" y="-20"
+             xlink:href="finishedBW/CCK.jpg__.jpg"/>
+              <circle class="ring" cx="150" cy="150" r="100" />
+          </svg>
+                <div class="bio">
+                  <h2>Full Name</h2>
+                  <h4>Article Subtitle</h4>
+                </div>
+              </article>
+            </a>
+          </li>
+          <li>
+            <svg width="0" height="0">
+          <clipPath id="circle">
+              <circle cx="150" cy="150" r="100"/>
+          </clipPath>
+      </svg>
+            <a href="#">
+              <article>
+                <svg class="portrait" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+      <!-- no automatic sizing for SVG image, width and height must be set -->
+              <image width="300" height="340" x="0" y="-20"
+             xlink:href="BW.jpg"/>
+              <circle class="ring" cx="150" cy="150" r="100" />
+          </svg>
+                <div class="bio">
+                  <h2>Full Name</h2>
+                  <h4>Article Subtitle</h4>
+                </div>
+              </article>
+            </a>
+          </li>
+          <li>
+            <svg width="0" height="0">
+          <clipPath id="circle">
+              <circle cx="150" cy="150" r="100"/>
+          </clipPath>
+      </svg>
+            <a href="#">
+              <article>
+                <svg class="portrait" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+      <!-- no automatic sizing for SVG image, width and height must be set -->
+              <image width="300" height="340" x="0" y="-20"
+             xlink:href="finishedBW/Aman.jpg__.jpg"/>
+              <circle class="ring" cx="150" cy="150" r="100" />
+          </svg>
+                <div class="bio">
+                  <h2>Full Name</h2>
+                  <h4>Article Subtitle</h4>
+                </div>
+              </article>
+            </a>
+          </li>
+          <li>
+            <svg width="0" height="0">
+          <clipPath id="circle">
+              <circle cx="150" cy="150" r="100"/>
+          </clipPath>
+      </svg>
+            <a href="#">
+              <article>
+                <svg class="portrait" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+      <!-- no automatic sizing for SVG image, width and height must be set -->
+              <image width="300" height="340" x="0" y="-20"
+             xlink:href="finishedBW/Emma.jpg__.jpg"/>
+              <circle class="ring" cx="150" cy="150" r="100" />
+          </svg>
+                <div class="bio">
+                  <h2>Full Name</h2>
+                  <h4>Article Subtitle</h4>
+                </div>
+              </article>
+            </a>
+          </li>
+          <li>
+            <svg width="0" height="0">
+          <clipPath id="circle">
+              <circle cx="150" cy="150" r="100"/>
+          </clipPath>
+      </svg>
+            <a href="#">
+              <article>
+                <svg class="portrait" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+      <!-- no automatic sizing for SVG image, width and height must be set -->
+              <image width="300" height="340" x="0" y="-20"
+             xlink:href="finishedBW/Gaurav.jpg__.jpg"/>
+              <circle class="ring" cx="150" cy="150" r="100" />
+          </svg>
+                <div class="bio">
+                  <h2>Full Name</h2>
+                  <h4>Article Subtitle</h4>
+                </div>
+              </article>
+            </a>
+          </li>
+          <li>
+            <svg width="0" height="0">
+          <clipPath id="circle">
+              <circle cx="150" cy="150" r="100"/>
+          </clipPath>
+      </svg>
+            <a href="#">
+              <article>
+                <svg class="portrait" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+      <!-- no automatic sizing for SVG image, width and height must be set -->
+              <image width="300" height="340" x="0" y="-20"
+             xlink:href="finishedBW/Guangyu.jpg__.jpg"/>
+              <circle class="ring" cx="150" cy="150" r="100" />
+          </svg>
+                <div class="bio">
+                  <h2>Full Name</h2>
+                  <h4>Article Subtitle</h4>
+                </div>
+              </article>
+            </a>
+          </li>
+          <li>
+            <svg width="0" height="0">
+          <clipPath id="circle">
+              <circle cx="150" cy="150" r="100"/>
+          </clipPath>
+      </svg>
+            <a href="#">
+              <article>
+                <svg class="portrait" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+      <!-- no automatic sizing for SVG image, width and height must be set -->
+              <image width="300" height="340" x="0" y="-20"
+             xlink:href="finishedBW/Ila.jpg__.jpg"/>
+              <circle class="ring" cx="150" cy="150" r="100" />
+          </svg>
+                <div class="bio">
+                  <h2>Full Name</h2>
+                  <h4>Article Subtitle</h4>
+                </div>
+              </article>
+            </a>
+          </li>
+          <li>
+            <svg width="0" height="0">
+          <clipPath id="circle">
+              <circle cx="150" cy="150" r="100"/>
+          </clipPath>
+      </svg>
+            <a href="#">
+              <article>
+                <svg class="portrait" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+      <!-- no automatic sizing for SVG image, width and height must be set -->
+              <image width="300" height="340" x="0" y="-20"
+             xlink:href="finishedBW/Jacky.jpg__.jpg"/>
+              <circle class="ring" cx="150" cy="150" r="100" />
+          </svg>
+                <div class="bio">
+                  <h2>Full Name</h2>
+                  <h4>Article Subtitle</h4>
+                </div>
+              </article>
+            </a>
+          </li>
+          <li>
+            <svg width="0" height="0">
+          <clipPath id="circle">
+              <circle cx="150" cy="150" r="100"/>
+          </clipPath>
+      </svg>
+            <a href="#">
+              <article>
+                <svg class="portrait" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+      <!-- no automatic sizing for SVG image, width and height must be set -->
+              <image width="300" height="340" x="0" y="-20"
+             xlink:href="finishedBW/Jian.jpg__.jpg"/>
+              <circle class="ring" cx="150" cy="150" r="100" />
+          </svg>
+                <div class="bio">
+                  <h2>Full Name</h2>
+                  <h4>Article Subtitle</h4>
+                </div>
+              </article>
+            </a>
+          </li>
+          <li>
+            <svg width="0" height="0">
+          <clipPath id="circle">
+              <circle cx="150" cy="150" r="100"/>
+          </clipPath>
+      </svg>
+            <a href="#">
+              <article>
+                <svg class="portrait" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+      <!-- no automatic sizing for SVG image, width and height must be set -->
+              <image width="300" height="340" x="0" y="-20"
+             xlink:href="finishedBW/Joseph.jpg__.jpg"/>
+              <circle class="ring" cx="150" cy="150" r="100" />
+          </svg>
+                <div class="bio">
+                  <h2>Full Name</h2>
+                  <h4>Article Subtitle</h4>
+                </div>
+              </article>
+            </a>
+          </li>
+          <li>
+            <svg width="0" height="0">
+          <clipPath id="circle">
+              <circle cx="150" cy="150" r="100"/>
+          </clipPath>
+      </svg>
+            <a href="#">
+              <article>
+                <svg class="portrait" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+      <!-- no automatic sizing for SVG image, width and height must be set -->
+              <image width="300" height="340" x="0" y="-20"
+             xlink:href="finishedBW/Paul.jpg__.jpg"/>
+              <circle class="ring" cx="150" cy="150" r="100" />
+          </svg>
+                <div class="bio">
+                  <h2>Full Name</h2>
+                  <h4>Article Subtitle</h4>
+                </div>
+              </article>
+            </a>
+          </li>
+          <li>
+            <svg width="0" height="0">
+          <clipPath id="circle">
+              <circle cx="150" cy="150" r="100"/>
+          </clipPath>
+      </svg>
+            <a href="#">
+              <article>
+                <svg class="portrait" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+      <!-- no automatic sizing for SVG image, width and height must be set -->
+              <image width="300" height="340" x="0" y="-20"
+             xlink:href="finishedBW/Peiti.jpg__.jpg"/>
+              <circle class="ring" cx="150" cy="150" r="100" />
+          </svg>
+                <div class="bio">
+                  <h2>Full Name</h2>
+                  <h4>Article Subtitle</h4>
+                </div>
+              </article>
+            </a>
+          </li>
+          <li>
+            <svg width="0" height="0">
+          <clipPath id="circle">
+              <circle cx="150" cy="150" r="100"/>
+          </clipPath>
+      </svg>
+            <a href="#">
+              <article>
+                <svg class="portrait" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+      <!-- no automatic sizing for SVG image, width and height must be set -->
+              <image width="300" height="340" x="0" y="-20"
+             xlink:href="finishedBW/Priyank.jpg__.jpg"/>
+              <circle class="ring" cx="150" cy="150" r="100" />
+          </svg>
+                <div class="bio">
+                  <h2>Full Name</h2>
+                  <h4>Article Subtitle</h4>
+                </div>
+              </article>
+            </a>
+          </li>
+          <li>
+            <svg width="0" height="0">
+          <clipPath id="circle">
+              <circle cx="150" cy="150" r="100"/>
+          </clipPath>
+      </svg>
+            <a href="#">
+              <article>
+                <svg class="portrait" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+      <!-- no automatic sizing for SVG image, width and height must be set -->
+              <image width="300" height="340" x="0" y="-20"
+             xlink:href="finishedBW/Qi.jpg__.jpg"/>
+              <circle class="ring" cx="150" cy="150" r="100" />
+          </svg>
+                <div class="bio">
+                  <h2>Full Name</h2>
+                  <h4>Article Subtitle</h4>
+                </div>
+              </article>
+            </a>
+          </li>
+          <li>
+            <svg width="0" height="0">
+          <clipPath id="circle">
+              <circle cx="150" cy="150" r="100"/>
+          </clipPath>
+      </svg>
+            <a href="#">
+              <article>
+                <svg class="portrait" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+      <!-- no automatic sizing for SVG image, width and height must be set -->
+              <image width="300" height="340" x="0" y="-20"
+             xlink:href="finishedBW/Sean.jpg__.jpg"/>
+              <circle class="ring" cx="150" cy="150" r="100" />
+          </svg>
+                <div class="bio">
+                  <h2>Full Name</h2>
+                  <h4>Article Subtitle</h4>
+                </div>
+              </article>
+            </a>
+          </li>
+          <li>
+            <svg width="0" height="0">
+          <clipPath id="circle">
+              <circle cx="150" cy="150" r="100"/>
+          </clipPath>
+      </svg>
+            <a href="#">
+              <article>
+                <svg class="portrait" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+      <!-- no automatic sizing for SVG image, width and height must be set -->
+              <image width="300" height="340" x="0" y="-20"
+             xlink:href="finishedBW/Steve.jpg__.jpg"/>
+              <circle class="ring" cx="150" cy="150" r="100" />
+          </svg>
+                <div class="bio">
+                  <h2>Full Name</h2>
+                  <h4>Article Subtitle</h4>
+                </div>
+              </article>
+            </a>
+          </li>
+          <li>
+            <svg width="0" height="0">
+          <clipPath id="circle">
+              <circle cx="150" cy="150" r="100"/>
+          </clipPath>
+      </svg>
+            <a href="#">
+              <article>
+                <svg class="portrait" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+      <!-- no automatic sizing for SVG image, width and height must be set -->
+              <image width="300" height="340" x="0" y="-20"
+             xlink:href="finishedBW/Vinay.jpg__.jpg"/>
+              <circle class="ring" cx="150" cy="150" r="100" />
+          </svg>
+                <div class="bio">
+                  <h2>Full Name</h2>
+                  <h4>Article Subtitle</h4>
+                </div>
+              </article>
+            </a>
+          </li>
+          <li>
+            <svg width="0" height="0">
+          <clipPath id="circle">
+              <circle cx="150" cy="150" r="100"/>
+          </clipPath>
+      </svg>
+            <a href="#">
+              <article>
+                <svg class="portrait" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+      <!-- no automatic sizing for SVG image, width and height must be set -->
+              <image width="300" height="340" x="0" y="-20"
+             xlink:href="finishedBW/Vincent.jpg__.jpg"/>
+              <circle class="ring" cx="150" cy="150" r="100" />
+          </svg>
+                <div class="bio">
+                  <h2>Full Name</h2>
+                  <h4>Article Subtitle</h4>
+                </div>
+              </article>
+            </a>
+          </li>
+          <li>
+            <svg width="0" height="0">
+          <clipPath id="circle">
+              <circle cx="150" cy="150" r="100"/>
+          </clipPath>
+      </svg>
+            <a href="#">
+              <article>
+                <svg class="portrait" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+      <!-- no automatic sizing for SVG image, width and height must be set -->
+              <image width="300" height="340" x="0" y="-20"
+             xlink:href="finishedBW/Wei.jpg__.jpg"/>
+              <circle class="ring" cx="150" cy="150" r="100" />
+          </svg>
+                <div class="bio">
+                  <h2>Full Name</h2>
+                  <h4>Article Subtitle</h4>
+                </div>
+              </article>
+            </a>
+          </li>
+          <li>
+            <svg width="0" height="0">
+          <clipPath id="circle">
+              <circle cx="150" cy="150" r="100"/>
+          </clipPath>
+      </svg>
+            <a href="#">
+              <article>
+                <svg class="portrait" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+      <!-- no automatic sizing for SVG image, width and height must be set -->
+              <image width="300" height="340" x="0" y="-20"
+             xlink:href="finishedBW/Wei_An.jpg__.jpg"/>
+              <circle class="ring" cx="150" cy="150" r="100" />
+          </svg>
+                <div class="bio">
+                  <h2>Full Name</h2>
+                  <h4>Article Subtitle</h4>
+                </div>
+              </article>
+            </a>
+          </li>
+          <li>
+            <svg width="0" height="0">
+          <clipPath id="circle">
+              <circle cx="150" cy="150" r="100"/>
+          </clipPath>
+      </svg>
+            <a href="#">
+              <article>
+                <svg class="portrait" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+      <!-- no automatic sizing for SVG image, width and height must be set -->
+              <image width="300" height="340" x="0" y="-20"
+             xlink:href="finishedBW/Weikang.jpg__.jpg"/>
+              <circle class="ring" cx="150" cy="150" r="100" />
+          </svg>
+                <div class="bio">
+                  <h2>Full Name</h2>
+                  <h4>Article Subtitle</h4>
+                </div>
+              </article>
+            </a>
+          </li>
+          <li>
+            <svg width="0" height="0">
+          <clipPath id="circle">
+              <circle cx="150" cy="150" r="100"/>
+          </clipPath>
+      </svg>
+            <a href="#">
+              <article>
+                <svg class="portrait" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+      <!-- no automatic sizing for SVG image, width and height must be set -->
+              <image width="300" height="340" x="0" y="-20"
+             xlink:href="finishedBW/Wenxin.jpg__.jpg"/>
+              <circle class="ring" cx="150" cy="150" r="100" />
+          </svg>
+                <div class="bio">
+                  <h2>Full Name</h2>
+                  <h4>Article Subtitle</h4>
+                </div>
+              </article>
+            </a>
+          </li>
+          <li>
+            <svg width="0" height="0">
+          <clipPath id="circle">
+              <circle cx="150" cy="150" r="100"/>
+          </clipPath>
+      </svg>
+            <a href="#">
+              <article>
+                <svg class="portrait" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+      <!-- no automatic sizing for SVG image, width and height must be set -->
+              <image width="300" height="340" x="0" y="-20"
+             xlink:href="finishedBW/Yang.jpg__.jpg"/>
+              <circle class="ring" cx="150" cy="150" r="100" />
+          </svg>
+                <div class="bio">
+                  <h2>Full Name</h2>
+                  <h4>Article Subtitle</h4>
+                </div>
+              </article>
+            </a>
+          </li>
+          <li>
+            <svg width="0" height="0">
+          <clipPath id="circle">
+              <circle cx="150" cy="150" r="100"/>
+          </clipPath>
+      </svg>
+            <a href="#">
+              <article>
+                <svg class="portrait" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+      <!-- no automatic sizing for SVG image, width and height must be set -->
+              <image width="300" height="340" x="0" y="-20"
+             xlink:href="finishedBW/Yi.jpg__.jpg"/>
+              <circle class="ring" cx="150" cy="150" r="100" />
+          </svg>
+                <div class="bio">
+                  <h2>Full Name</h2>
+                  <h4>Article Subtitle</h4>
+                </div>
+              </article>
+            </a>
+          </li>
+          <li>
+            <svg width="0" height="0">
+          <clipPath id="circle">
+              <circle cx="150" cy="150" r="100"/>
+          </clipPath>
+      </svg>
+            <a href="#">
+              <article>
+                <svg class="portrait" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+      <!-- no automatic sizing for SVG image, width and height must be set -->
+              <image width="300" height="340" x="0" y="-20"
+             xlink:href="finishedBW/Yin.jpg__.jpg"/>
+              <circle class="ring" cx="150" cy="150" r="100" />
+          </svg>
+                <div class="bio">
+                  <h2>Full Name</h2>
+                  <h4>Article Subtitle</h4>
+                </div>
+              </article>
+            </a>
+          </li>
+          <li>
+            <svg width="0" height="0">
+          <clipPath id="circle">
+              <circle cx="150" cy="150" r="100"/>
+          </clipPath>
+      </svg>
+            <a href="#">
+              <article>
+                <svg class="portrait" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+      <!-- no automatic sizing for SVG image, width and height must be set -->
+              <image width="300" height="340" x="0" y="-20"
+             xlink:href="finishedBW/Yu-Wei.jpg__.jpg"/>
+              <circle class="ring" cx="150" cy="150" r="100" />
+          </svg>
+                <div class="bio">
+                  <h2>Full Name</h2>
+                  <h4>Article Subtitle</h4>
+                </div>
+              </article>
+            </a>
+          </li>
+          <li>
+            <svg width="0" height="0">
+          <clipPath id="circle">
+              <circle cx="150" cy="150" r="100"/>
+          </clipPath>
+      </svg>
+            <a href="#">
+              <article>
+                <svg class="portrait" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+      <!-- no automatic sizing for SVG image, width and height must be set -->
+              <image width="300" height="340" x="0" y="-20"
+             xlink:href="finishedBW/Yu.jpg__.jpg"/>
+              <circle class="ring" cx="150" cy="150" r="100" />
+          </svg>
+                <div class="bio">
+                  <h2>Full Name</h2>
+                  <h4>Article Subtitle</h4>
+                </div>
+              </article>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="content-wrapper links">
+         <div style="width:100px; padding-top:20px; margin:auto; display:flex;">
+             <img src="github icon.png" width="34px" height="34px" style="padding-right:10px;"></img>
+             <img src="twitter icon.png" width="34px" height="34px"></img>
+         </div>
+         <ul class="list-horizontal">
+             <li>Contact</li>
+             <li><a href="otherPrac.html">Team</a></li>
+             <li><a href="press/press.html">Press</a></li>
+             <li><a href="dataset/dataset.html">Dataset</a></li>
+         </ul>
+     </section>
+
+  </body>
+
 </html>
+
