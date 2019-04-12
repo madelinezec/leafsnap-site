@@ -26,9 +26,7 @@ $(document).ready(function() {
             "bInfo":            false,
             "bPaginate":        false,
             "fnDrawCallback":   function() {
-                //  $("img.speciesImg").lazyload({threshold: 200, effect: "fadeIn", placeholder: "../static/images/loading.gif"});
-                // $("input#search").focus();
-                // todo: change it to when clicking
+
             }
         });
         // for search tab
@@ -51,7 +49,6 @@ $(document).ready(function() {
 
 $.fn.CreateSearchAutocomplete = function() {
 
-    console.log("your message here");
     var searchTable = this;
     // autocomplete in jquery-ui
     var allSpecies = new Array();
@@ -72,8 +69,11 @@ $.fn.CreateSearchAutocomplete = function() {
         return true;
     });
     $("div#species li#search input").keyup(function(eventObject) {
-        if (eventObject.which == 13)        // when user presses "enter", close the autocomplete
+        if (eventObject.which == 13){
+            console.log("this is closing!");
             $(this).autocomplete("close");
+        }        // when user presses "enter", close the autocomplete
+            
         searchTable.fnFilter(this.value);
     }).autocomplete({
         source              : allSpecies,
@@ -85,37 +85,6 @@ $.fn.CreateSearchAutocomplete = function() {
                                 }
     });
     
-    /*
-    // old autocomplete 
-    var allSpecies = new Array();
-    // create allSpecies for autocomplete
-    $("tbody tr", searchSpeciesTable).each(function(index, element) {
-        allSpecies.push({
-                            "popname":      $("td.popnameTd", element).text().trim(),
-                            "firstName":    $("td.popnameTd", element).attr("firstName"),
-                            "lastName":     $("td.popnameTd", element).attr("lastName"),
-                            "sciname":      $("td.scinameTd", element).text().trim()
-                        });
-    });
-    
-    $("input#search").autocomplete(allSpecies, {
-        "matchContains":    true,
-        "max":              25,
-        "selectFirst":      false,
-        "formatItem":       function(row, i, itemNumber, searchTerm) {
-                                var formatPopname = GetPopname(row.firstName, row.lastName, sortPopname);
-                                //$("#result").append("<p>" + formatPopname + "</p>");
-                                return formatPopname + " <i>(" + row.sciname + ")</i>";
-                            },
-        "formatMatch":      function(row, i, itemNumber) {
-                                //$("body").append(row.popname + " " + row.sciname);
-                                return row.popname + " " + row.sciname;
-                            },
-        "formatResult":     function(row, i, itemNumber) {
-                                return row.sciname;
-                            }
-    });
-    */
 }
 
 // sort the column of datatable dynamically
